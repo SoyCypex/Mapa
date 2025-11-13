@@ -57,13 +57,24 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1")
     // Base de Datos (Room / SQLite)
     implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1") // Para Coroutines y Flow
+    implementation("androidx.room:room-ktx:2.6.1")
+    implementation(libs.play.services.maps) // Para Coroutines y Flow
     ksp("androidx.room:room-compiler:2.6.1") // Compilador de Room
     // Ubicación (GPS)
     implementation("com.google.android.gms:play-services-location:21.2.0")
     // Mapas (OSM)
-    implementation("org.osmdroid:osmdroid-android:6.1.18")
     implementation("org.osmdroid:osmdroid-compose:1.0.0")
+
+    implementation ("org.osmdroid:osmdroid-android:6.1.6")
+    implementation ("org.osmdroid:osmdroid-wms:6.1.6")
+    implementation ("org.osmdroid:osmdroid-mapsforge:6.1.6")
+    implementation ("org.osmdroid:osmdroid-geopackage:6.1.6")
+
+    implementation("tech.utsmankece:osm-android-compose:1.0.0")
+    implementation("ovh.plrapps:mapcompose:2.11.1")
+
+
+
     // Cámara (CameraX)
     implementation("androidx.camera:camera-core:1.3.3")
     implementation("androidx.camera:camera-camera2:1.3.3")
